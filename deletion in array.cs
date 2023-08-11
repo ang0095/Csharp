@@ -24,7 +24,7 @@ namespace nmew
 
         static int IndexDeletion(int[] arr, int used, int index)
         {
-            //code for Insertion
+            //code for Deletion
             
             for(int i = index; i <=used-1; i++)
             {
