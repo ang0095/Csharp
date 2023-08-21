@@ -50,6 +50,20 @@ namespace nmew
 
             return insert;
         }
+
+         static Node InsertAtEnd(Node head, int newData)
+        {
+            Node insert = new Node();
+            insert.data = newData;
+            Node p = head;
+            while(p.next != null)
+            {
+                p=p.next;
+            }
+            p.next = insert;
+            insert.next = null;
+            return insert;
+        }
         public static void Main(string[] args)
         {
             Node head = new Node();
@@ -80,7 +94,10 @@ namespace nmew
 
             InsertInBetween(head, 16, 2);
             LinkedListTraversal(head);
+            Console.WriteLine("\n");
 
+            InsertAtEnd(head, 17);
+            LinkedListTraversal(head);
 
 
         }
