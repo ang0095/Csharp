@@ -88,7 +88,7 @@ namespace nmew
             LinkedListTraversal(head);
             Console.WriteLine("\n");
 
-            head = InsertAtFirst(head, 15);
+            head = InsertAtFirst(head, 15);            // yaha pe "head = InsertAtFirst(head, 15);" likhna jaruri hai kyuki ye(15) element hamara naya head banega. Baaki cases me "head =" nhi likhna hai
             LinkedListTraversal(head);
             Console.WriteLine("\n");
 
