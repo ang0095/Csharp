@@ -61,7 +61,7 @@ namespace nmew
             second.data = 11;
             second.next = third;
 
-            third.data = 41;
+            third.data = 51;
             third.next = fourth;
 
             fourth.data = 66;
