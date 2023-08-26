@@ -26,6 +26,24 @@ namespace nmew
                 ptr = ptr.next;
             }
         } 
+        
+         static Node DeleteAfterNode(Node head,int Value)
+        {
+            Node p = head;
+            Node q = head.next;
+           while(q.data != Value && q.next != null)
+            {
+                p = p.next;
+                q = q.next;
+            }
+
+           if(q.data == Value)
+            {
+                p.next = q.next;
+                q.next = null;
+            }
+            return head;
+        }
        
         public static void Main(string[] args)
         {
@@ -55,6 +73,10 @@ namespace nmew
             sixth.data = 58;
             sixth.next = null;
 
+            LinkedListTraversal(head);
+            Console.WriteLine("\n");
+
+            DeleteAfterNode(head, 51);
             LinkedListTraversal(head);
 
         }
