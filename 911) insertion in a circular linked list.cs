@@ -43,6 +43,21 @@ namespace nmew
             return head;
 
         }
+
+        static Node InsertInBetween(Node head,int index, int newData)
+        {
+            Node insert = new Node();
+            insert.data = newData;
+            Node p = head;
+            for(int i = 0; i < index - 1; i++)
+            {
+                p = p.next;
+            }
+            insert.next = p.next;
+            p.next = insert;
+            return insert;
+
+        }
         
         
         public static void Main(string[] args)
@@ -76,9 +91,15 @@ namespace nmew
             LinkedListTraversal(head);
             Console.WriteLine("\n");
 
-            head = InsertAtFirst(head, 9);
+            
             head = InsertAtFirst(head, 19);
             LinkedListTraversal(head);
+            
+            Console.WriteLine("\n");
+
+            InsertInBetween(head, 3, 19);
+            LinkedListTraversal(head);
+            
 
         }
 
