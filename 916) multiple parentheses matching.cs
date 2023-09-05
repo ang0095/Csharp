@@ -13,21 +13,6 @@ namespace mnew
         {
 
            
-                    stack.Pop();
-                }
-            }
-            if(stack.Count > 0)
-            {
-                Console.WriteLine("Unbalanced expression, extra closing brackets needed");
-            }
-            else if(stack.Count == 0) 
-            {
-                Console.WriteLine("Balanced expression");
-            }
-            else
-            {
-                Console.WriteLine("Unbalanced equation, opening bracket(s) missing");
-            }
         }
     }
 }
