@@ -14,7 +14,6 @@ namespace nmew
         private int size;
         private int capacity;
 
-
         public CircularQueue(int capacity) // constructor
         {
             this.capacity = capacity;
@@ -97,8 +96,6 @@ namespace nmew
             } 
             while (current != (rear + 1) % capacity);
         }
-
-
     }
 
    class Program
