@@ -15,7 +15,7 @@ namespace nmew
         private int capacity;
 
 
-        public CircularQueue(int capacity) 
+        public CircularQueue(int capacity) // constructor
         {
             this.capacity = capacity;
             this.queue = new T[capacity];
