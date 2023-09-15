@@ -8,7 +8,7 @@ namespace nmew
 {
     class Node
     {
-        public int data;
+        public int data; //(this code is for only int datatypes. We can you Generic data types<T> for handling all cases.
         public Node next;
     }
     class QueueLinked
