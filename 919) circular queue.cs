@@ -6,7 +6,7 @@ using System.Diagnostics.Tracing;
 
 namespace nmew
 {
-    public class CircularQueue<T>
+    public class CircularQueue<T> // Here we have used generic data type<t> to handle all datatypes, not just int datatype.
     {
         private T[] queue; // private T[] queue; is declaring a private array that will hold elements of the generic type T.
         private int front;
